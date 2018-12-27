@@ -7,4 +7,3 @@ dist: trusty
 
 script:
   - yarn install
-  - yarn deploy
