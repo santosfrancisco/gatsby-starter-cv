@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/santosfrancisco/gatsby-starter-cv.svg?branch=master)](https://travis-ci.org/santosfrancisco/gatsby-starter-cv)
+[![GitHub version](https://badge.fury.io/gh/santosfrancisco%2Fgatsby-starter-cv.svg)](https://badge.fury.io/gh/santosfrancisco%2Fgatsby-starter-cv)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+
 <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
@@ -51,8 +55,7 @@ Create your resume in a few minutes with this totally responsive starter using R
 
 ## Configuration
 
-Update the configuration file with your data
-
+Update the configuration file with your data. The configuration file is in ```data/siteConfig.js```
 
 
 > **Skills** is a set of your personal skills and their respective levels ranging from > 0 to 100.
