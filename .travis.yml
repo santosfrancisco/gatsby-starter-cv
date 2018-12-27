@@ -1,0 +1,18 @@
+sudo: required
+language: node_js
+
+node_js: node
+
+dist: trusty
+
+script:
+  - yarn install
+  - yarn build --prefix-paths
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: public
+  on:
+    branch: master
