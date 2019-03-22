@@ -20,12 +20,13 @@ const Separator = styled.hr`
 
 class Home extends React.Component {
   render () {
-    const title = 'Hi! I\'m Francisco!'
+    const title = siteConfig.siteTitle
+    const {keywords} = siteConfig
     return (
       <Layout location={this.props.location}>
         <SEO
           title={title}
-          keywords={['gatsbyjs', 'react', 'curriculum']}
+          keywords={keywords}
         />
 
         <Hero
