@@ -57,6 +57,7 @@ Create your resume in a few minutes with this totally responsive starter using R
 
 Update the configuration file with your data. The configuration file is in ```data/siteConfig.js```
 
+:warning: NOTE: Please change googleAnalyticsId to your ID.  See https://analytics.google.com for details.
 
 > **Skills** is a set of your personal skills and their respective levels ranging from > 0 to 100.
 > **jobs** is a set of your work experiences
@@ -141,7 +142,7 @@ module.exports = {
   siteUrl: 'https://santosfrancisco.github.io/gatsby-starter-cv',
   pathPrefix: '/gatsby-starter-cv', // Note: it must *not* have a trailing slash.
   siteCover: '/images/cover.jpeg',
-  googleAnalyticsId: 'UA-131359385-1',
+  googleAnalyticsId: 'UA-000000000-1',
   background_color: '#ffffff',
   theme_color: '#25303B',
   display: 'minimal-ui',
