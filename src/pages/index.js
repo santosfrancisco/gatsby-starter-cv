@@ -91,7 +91,8 @@ export default styled(Home)`
 
   .avatar {
     align-items: center;
-  margin-bottom: 24px;
+    margin-bottom: 24px;
+    flex-direction: column;
   }
 
   .avatar__image {
