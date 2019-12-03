@@ -57,6 +57,7 @@ export default styled(Timeline)`
   .timeline__date {
     display: block;
     width: 60px;
+    height: 60px;
     padding: 3px 5px;
     position: absolute;
     top: 0;
