@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import styled, { css } from 'styled-components'
 import { FaGithub } from "react-icons/fa"
 import siteConfig from '../../../data/siteConfig'
+import { withPrefix } from "gatsby"
 
 const HeaderWrapper = styled.header`
   position: fixed;
@@ -84,7 +85,7 @@ const Header = ({ location }) => {
         <HeaderLinkGroup>
           {headerLinks.map((headerLink, i) => (
             <HeaderLink
-              active={location.pathname === headerLink.url}
+              active={location.pathname === withPrefix(headerLink.url)}
               to={headerLink.url}
               key={`header-link-${i}`}
             >

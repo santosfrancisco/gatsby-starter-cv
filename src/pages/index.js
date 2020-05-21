@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Container, Row, Col } from 'react-awesome-styled-grid'
 import { FaGithub, FaLinkedin, FaEnvelope, FaTwitter } from "react-icons/fa"
 import siteConfig from '../../data/siteConfig'
+import { withPrefix } from "gatsby"
 
 import Layout from '../components/layout'
 import Hero from '../components/hero'
@@ -45,7 +46,7 @@ class Home extends React.Component {
               <Col xs={4} className='avatar'>
                 <img
                   className='avatar__image'
-                  src='/images/avatar.jpeg'
+                  src={withPrefix('/images/avatar.jpeg')}
                   alt='user avatar'
                 />
                 <div className="social">

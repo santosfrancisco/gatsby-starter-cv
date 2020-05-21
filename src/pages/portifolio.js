@@ -1,8 +1,8 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
-import { Container, Row, Col, config } from 'react-awesome-styled-grid'
+import { Container, Row, Col } from 'react-awesome-styled-grid'
 import siteConfig from '../../data/siteConfig'
-
+import { withPrefix } from "gatsby"
 import Layout from '../components/layout'
 import Hero from '../components/hero'
 import SEO from '../components/SEO'
@@ -40,7 +40,7 @@ const Portifolio = ({ className, location }) => {
       />
 
       <Hero
-        heroImg="/images/pierre-chatel-innocenti-W5INoOK-5eI-unsplash.jpg"
+        heroImg={withPrefix('/images/pierre-chatel-innocenti-W5INoOK-5eI-unsplash.jpg')}
         title={title}
       />
 
@@ -57,7 +57,7 @@ const Portifolio = ({ className, location }) => {
                   href={job.url}
                   target="_blank"
                 >
-                  <Image src={job.image} />
+                  <Image src={withPrefix(job.image)} />
                   <p>{job.description}</p>
                 </JobCard>
               </Col>

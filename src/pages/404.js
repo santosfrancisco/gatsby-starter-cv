@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { withPrefix } from "gatsby"
 
 import Layout from '../components/layout'
 import Hero from '../components/hero'
@@ -27,13 +28,13 @@ class NotFoundPage extends React.Component {
       <Layout location={this.props.location} noCover={true}>
         <SEO title="Page Not Found" />
         <Hero
-          heroImg='/images/404.jpeg'
+          heroImg={withPrefix('/images/404.jpeg')}
           title='404'
         />
         <Wrapper>
           <MainTitle>404 Page Not Found</MainTitle>
           <Icon>
-            <img src='/images/ufo-and-cow.svg' alt='ufo and cow' />
+            <img src={withPrefix('/images/ufo-and-cow.svg')} alt='ufo and cow' />
           </Icon>
           <Text>
             Looks like you've followed a broken link or entered a URL that
