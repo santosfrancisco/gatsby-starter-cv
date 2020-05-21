@@ -1,15 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import siteConfig from '../../../data/siteConfig'
 import { ResetCSS, GlobalStyle } from '../styles'
 import Header from '../header'
 import Footer from '../footer'
 
-const Layout = ({ children }) => (
+const Layout = ({ children, location }) => (
   <React.Fragment>
     <ResetCSS />
     <GlobalStyle />
-    <Header headerLinks={siteConfig.headerLinks} />
+    <Header location={location} />
     <div>{children}</div>
     <Footer />
   </React.Fragment>
