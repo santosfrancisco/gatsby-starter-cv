@@ -16,7 +16,13 @@ Create your resume in a few minutes with this totally responsive starter using R
 
 ## 📷 Preview
 
-![Preview](./preview.png)
+### Mobile
+
+![Preview mobile](./preview-mobile.gif)
+
+### Desktop
+
+![Preview desktop](./preview-desktop.gif)
 
 ## 🚀 Quick start
 
@@ -132,6 +138,19 @@ module.exports = {
   
     },
     /* ... */
+  ],
+  portifolio: [
+    {
+      image: "/images/gatsby-starter-cv.png",
+      description: "Gatsby starter CV template",
+      url: "https://www.gatsbyjs.org/starters/santosfrancisco/gatsby-starter-cv/"
+    },
+    {
+      image: "/images/awesome-grid.png",
+      description: "Responsive grid for ReactJS",
+      url: "https://github.com/santosfrancisco/react-awesome-styled-grid"
+    },
+    /* more portifolio items here */
   ],
   social: {
     twitter: "https://twitter.com/_franciscodf",
