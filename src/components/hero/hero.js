@@ -8,9 +8,6 @@ const HeroContainer = styled.div`
   display: table;
   width: 100%;
   overflow: hidden;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 `
 
 const TitleContainer = styled.div`
@@ -28,26 +25,19 @@ const HeroTitle = styled.h1`
   text-shadow: 1px 1px 4px rgba(34, 34, 34, 0.6);
 `
 
-class Hero extends React.Component {
-  render() {
-    const { title, className } = this.props
-
-    return (
-      <HeroContainer className={className}>
-        <TitleContainer>
-          <HeroTitle>{title}</HeroTitle>
-        </TitleContainer>
-      </HeroContainer>
-    )
-  }
-}
+const Hero = ({ className, title }) => (
+  <HeroContainer className={className}>
+    <TitleContainer>
+      <HeroTitle>{title}</HeroTitle>
+    </TitleContainer>
+  </HeroContainer>
+)
 
 export default styled(Hero)`
-  
   ${p => `background-image: url(${p.heroImg || withPrefix(siteConfig.siteCover)});`}
   height: 70vh;
   background-attachment: fixed;
-  background-position: center;
+  background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
 `

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { FaGithub } from "react-icons/fa"
 import siteConfig from '../../../data/siteConfig'
 
@@ -36,6 +36,7 @@ const HeaderLinkGroup = styled.div`
 
 const HeaderLink = styled(Link)`
   position: relative;
+  box-sizing: border-box;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -47,6 +48,9 @@ const HeaderLink = styled(Link)`
   padding-right: 20px;
   min-width: 42px;
   z-index: 10;
+  ${({ active }) => active && css`
+    border-bottom: 2px solid #fff;
+  `}
 `
 const GithubLink = styled(({ className }) => (
   <a 
@@ -71,25 +75,27 @@ const GithubLink = styled(({ className }) => (
   z-index: 10;
 `
 
-class Header extends React.Component {
-  render () {
-    const { headerLinks } = siteConfig
+const Header = ({ location }) => {
+  const { headerLinks } = siteConfig
 
-    return (
-      <HeaderWrapper>
-        <HeaderNav>
-          <HeaderLinkGroup>
-            {headerLinks.map((headerLink, i) => (
-              <HeaderLink to={headerLink.url} key={`header-link-${i}`}>
-                {headerLink.label}
-              </HeaderLink>
-            ))}
-          </HeaderLinkGroup>
-          <GithubLink />
-        </HeaderNav>
-      </HeaderWrapper>
-    )
-  }
+  return (
+    <HeaderWrapper>
+      <HeaderNav>
+        <HeaderLinkGroup>
+          {headerLinks.map((headerLink, i) => (
+            <HeaderLink
+              active={location.pathname === headerLink.url}
+              to={headerLink.url}
+              key={`header-link-${i}`}
+            >
+              {headerLink.label}
+            </HeaderLink>
+          ))}
+        </HeaderLinkGroup>
+        <GithubLink />
+      </HeaderNav>
+    </HeaderWrapper>
+  )
 }
 
 export default Header

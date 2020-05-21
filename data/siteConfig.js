@@ -34,10 +34,22 @@ module.exports = {
     {
       name: 'Git',
       level: 70
-    }
+    },
+    /* more skills here */
   ],
   jobs: [
+    /* more portifolio items here */
     {
+      company: "Gympass",
+      begin: {
+        month: 'sep',
+        year: '2019'
+      },
+      duration: null,
+      occupation: "Frontend developer",
+      description: "I am part of the Corporate team, responsible for the development and maintenance of the employee management platform, giving more and more autonomy to partner companies."
+  
+    },  {
       company: "Lendico",
       begin: {
         month: 'apr',
@@ -67,7 +79,19 @@ module.exports = {
       description: "Responsible for the implementation and parameterization of the system, training and customer support. Acting also in person in real estate launches guaranteeing the success and good use of the tool."
   
     },
-    /* ... */
+  ],
+  portifolio: [
+    {
+      image: "/images/gatsby-starter-cv.png",
+      description: "Gatsby starter CV template",
+      url: "https://www.gatsbyjs.org/starters/santosfrancisco/gatsby-starter-cv/"
+    },
+    {
+      image: "/images/awesome-grid.png",
+      description: "Responsive grid for ReactJS",
+      url: "https://github.com/santosfrancisco/react-awesome-styled-grid"
+    },
+    /* more portifolio items here */
   ],
   social: {
     twitter: "https://twitter.com/_franciscodf",
@@ -85,8 +109,12 @@ module.exports = {
   icon: 'src/assets/gatsby-icon.png',
   headerLinks: [
     {
-      label: 'Francisco Santos',
+      label: 'Home',
       url: '/',
+    },
+    {
+      label: 'Portifolio',
+      url: '/portifolio',
     }
   ]
 }
