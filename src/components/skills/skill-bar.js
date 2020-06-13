@@ -6,7 +6,7 @@ const SkillBar = ({ className, name, level }) => {
     <div className={className}>
       <label htmlFor={`${name}-bar`}>{name}</label>
       <div id={`${name}-bar`} className='skill__bar'>
-        <div className='skill__level'></div>
+        <div className='skill__level animate-on-scroll'></div>
       </div>
     </div>
   )
@@ -24,7 +24,12 @@ export default styled(SkillBar)`
   }
   .skill__level {
     background-color: #25303B;
-    width: ${p => p.level || 0}%;
+    width: 0;
     height: 8px;
+
+    &.is-visible {
+      transition: width .5s ease-in;
+      width: ${p => p.level || 0}%;
+    }
   }
 `

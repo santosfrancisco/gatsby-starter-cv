@@ -28,6 +28,9 @@ const HeaderNav = styled.nav`
   overflow-x: auto;
   overflow-y: hidden;
   background-color: #25303B;
+  a:hover {
+    filter: brightness(0.6);
+  }
 `
 
 const HeaderLinkGroup = styled.div`
@@ -50,6 +53,7 @@ const HeaderLink = styled(Link)`
   min-width: 42px;
   z-index: 10;
   ${({ active }) => active && css`
+    pointer-events: none;
     border-bottom: 2px solid #fff;
   `}
 `

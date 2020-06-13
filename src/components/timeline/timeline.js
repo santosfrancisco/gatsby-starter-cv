@@ -3,25 +3,33 @@ import styled from 'styled-components'
 import { config } from 'react-awesome-styled-grid'
 import siteConfig from '../../../data/siteConfig'
 
-const Timeline = ({ className }) => {
-  return (
-    <div className={className}>
-      <h1>Experience</h1>
-      {siteConfig.jobs && siteConfig.jobs.map(job => (
-        <article key={job.begin.month + job.begin.year} className='timeline__item'>
-          <div className="inner">
-            <span className="timeline__date">
-              <span className="timeline__month">{job.begin.month}</span>
-              <span className="timeline__year">{job.begin.year}</span>
-            </span>
-            <h2 className='timeline__title'>{job.occupation} at {job.company} <br /><small className='timeline__title--small'>({job.duration || 'present'})</small></h2>
+const Timeline = ({ className }) => (
+  <div className={className}>
+    <h1>Experience</h1>
+    {siteConfig.jobs && siteConfig.jobs.map(job => (
+      <article 
+        key={job.begin.month + job.begin.year} 
+        className='timeline__item animate-on-scroll'
+      >
+        <div className="inner">
+          <span className="timeline__date">
+            <span className="timeline__month">{job.begin.month}</span>
+            <span className="timeline__year">{job.begin.year}</span>
+          </span>
+          <div className="timeline__card">
+            <h2 className='timeline__card-title'>
+              {job.occupation} at {job.company} <br />
+              <small className='timeline__card-title--small'>
+                ({job.duration || 'present'})
+              </small>
+            </h2>
             <p>{job.description}</p>
           </div>
-        </article>
-      ))}
-    </div>
-  )
-}
+        </div>
+      </article>
+    ))}
+  </div>
+)
 
 export default styled(Timeline)`
 
@@ -51,8 +59,6 @@ export default styled(Timeline)`
     width: 100%;
     float: left;
     margin: 85px 0 0 0;
-    border-radius: 6px;
-    border: 1px solid #25303B;
   }
   .timeline__date {
     display: block;
@@ -82,7 +88,12 @@ export default styled(Timeline)`
   .timeline__year {
     font-size: 10px;
   }
-  .timeline__title {
+  .timeline__card {
+    border-radius: 6px;
+    border: 1px solid #25303B;
+    transform: translate(-50%);
+  }
+  .timeline__card-title {
     padding: 15px;
     margin: 0;
     color: #fff;
@@ -91,7 +102,7 @@ export default styled(Timeline)`
     border-radius: 3px 3px 0 0;
     position: relative;
   }
-  .timeline__title:after {
+  .timeline__card-title:after {
     content: '';
     position: absolute;
     top: -5px;
@@ -110,19 +121,29 @@ export default styled(Timeline)`
   }
   .timeline__item:nth-child(2n+2) div.inner {
     float: right;
+    .timeline__card {
+      transform: translate(50%);
+    }
   }
-  .timeline__title {
+  .timeline__card-title {
     background: #25303B;
   }
-  .timeline__title:after {
+  .timeline__card-title:after {
     background: #25303B;
   }
 
-  .timeline__title--small {
+  .timeline__card-title--small {
     font-size: 10px;
   }
 
-  ${p => config().media['sm']`
+  .timeline__item.is-visible div.inner {
+    .timeline__card {
+      transition: transform .8s ease-in;
+      transform: translate(0);
+    }
+  }
+
+  ${p => config(p).media['sm']`
   .timeline__item div.inner {
     width: 40%;
     margin: 5px 0 0 0;
