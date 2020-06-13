@@ -24,7 +24,7 @@
     "react-helmet": "5.2.1",
     "react-icons": "3.10.0",
     "simple-json-fetch": "1.0.1",
-    "styled-components": "4.4.1"
+    "styled-components": "5.1.1"
   },
   "keywords": [
     "gatsby"
