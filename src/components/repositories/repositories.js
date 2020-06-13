@@ -1,6 +1,7 @@
 import React from "react";
 import jsonFetch from "simple-json-fetch";
 import styled from 'styled-components'
+import { GoStar, GoRepoForked, GoLinkExternal } from 'react-icons/go'
 import siteConfig from '../../../data/siteConfig'
 
 import Loader from '../loader'
@@ -36,7 +37,11 @@ class Repositories extends React.Component {
                 {this.state.repos.map(repo => (
                   <React.Fragment key={repo.name}>
                     <div className="repositories__repo">
-                      <a className='repositories__repo-link' href={repo.html_url}>
+                      <a 
+                        className='repositories__repo-link' 
+                        href={repo.html_url}
+                        target="_blank"
+                      >
                         <strong>{repo.name}</strong>
                       </a>
                       <div>{repo.description}</div>
@@ -44,12 +49,22 @@ class Repositories extends React.Component {
                         Updated: {new Date(repo.updated_at).toUTCString()}
                       </div>
                       <div className="repositories__repo-star">
-                        ★ {repo.stargazers_count}
+                        {repo.fork && <GoRepoForked />}
+                        <GoStar /> {repo.stargazers_count}
                       </div>
                     </div>
                     <hr />
                   </React.Fragment>
                 ))}
+              </div>
+              <div className="repositories_user-link">
+                <a 
+                  href={`https://github.com/${siteConfig.githubUsername}`}
+                  target="_blank"
+                >
+                  See all my repositories
+                  <GoLinkExternal style={{ marginLeft: 8 }} />
+                </a>
               </div>
             </React.Fragment>
           )}
@@ -68,9 +83,17 @@ export default styled(Repositories)`
     position: relative;
   }
 
-  .repositories__repo-link {
+  .repositories__repo-link,
+  .repositories_user-link a {
     text-decoration: none;
     color: #25303B;
+    display: flex;
+    align-items: center;
+  }
+
+  .repositories_user-link {
+    display: flex;
+    justify-content: flex-end;
   }
 
   .repositories__repo-date {
@@ -82,6 +105,11 @@ export default styled(Repositories)`
     position: absolute;
     top: 0;
     right: 0;
+    display: flex;
+    align-items: center;
+    svg {
+      margin-right: 4px;
+    }
   }
 
   .repositories__loader {
