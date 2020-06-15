@@ -13,7 +13,6 @@
 
 Create your resume in a few minutes with this totally responsive starter using React. Show off your skills, work experiences and activities in github.
 
-
 ## 📷 Preview
 
 ### Mobile
@@ -175,3 +174,7 @@ module.exports = {
 }
 
 ```
+
+## It was useful?
+
+<a href="https://www.buymeacoffee.com/santosfrancisco" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" width="180px" ></a>
