@@ -43,7 +43,7 @@ export default styled(Timeline)`
     margin: 70px 0 0 -1px;
     width: 1px;
     height: calc(100% - 70px);
-    background: #25303B;
+    background: ${({ theme }) => theme.colors.primary};
   }
   .timeline__item {
     width: 100%;
@@ -73,9 +73,9 @@ export default styled(Timeline)`
     font-size: 12px;
     font-weight: 900;
     text-transform: uppercase;
-    background: #25303B;
+    background: ${({ theme }) => theme.colors.primary};
     color: #fff;
-    box-shadow: 0 0 0 7px #fff;
+    box-shadow: 0 0 0 7px ${({ theme }) => theme.colors.background};
   }
   .timeline__date span {
     display: block;
@@ -90,7 +90,7 @@ export default styled(Timeline)`
   }
   .timeline__card {
     border-radius: 6px;
-    border: 1px solid #25303B;
+    border: 1px solid ${({ theme }) => theme.colors.primary};
     transform: translate(-50%);
   }
   .timeline__card-title {
@@ -115,8 +115,8 @@ export default styled(Timeline)`
     padding: 15px;
     margin: 0;
     font-size: 14px;
-    background: #fff;
-    color: #656565;
+    background: ${({ theme }) => theme.colors.background};
+    color: ${({ theme }) => theme.colors.fontColor};
     border-radius: 0 0 6px 6px;
   }
   .timeline__item:nth-child(2n+2) div.inner {
@@ -126,10 +126,10 @@ export default styled(Timeline)`
     }
   }
   .timeline__card-title {
-    background: #25303B;
+    background: ${({ theme }) => theme.colors.primary};
   }
   .timeline__card-title:after {
-    background: #25303B;
+    background: ${({ theme }) => theme.colors.primary};
   }
 
   .timeline__card-title--small {

@@ -38,7 +38,7 @@ module.exports = {
     /* more skills here */
   ],
   jobs: [
-    /* more portifolio items here */
+    /* more jobs here */
     {
       company: "Gympass",
       begin: {
@@ -105,6 +105,8 @@ module.exports = {
   googleAnalyticsId: 'UA-000000000-1',
   background_color: '#ffffff',
   theme_color: '#25303B',
+  fontColor: "#000000cc",
+  enableDarkmode: true, // If true, enables dark mode switch
   display: 'minimal-ui',
   icon: 'src/assets/gatsby-icon.png',
   headerLinks: [

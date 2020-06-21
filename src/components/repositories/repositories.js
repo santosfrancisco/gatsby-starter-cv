@@ -86,7 +86,7 @@ export default styled(Repositories)`
   .repositories__repo-link,
   .repositories_user-link a {
     text-decoration: none;
-    color: #25303B;
+    color: ${({ theme }) => theme.colors.primary};
     display: flex;
     align-items: center;
   }
@@ -97,7 +97,6 @@ export default styled(Repositories)`
   }
 
   .repositories__repo-date {
-    color: #bbb;
     font-size: 10px;
   }
 
@@ -118,6 +117,8 @@ export default styled(Repositories)`
 
   hr {
     margin-top: 16px;
+    background-color: ${({ theme }) => theme.colors.fontColor};
+    opacity: .2;
   }
 
 `
