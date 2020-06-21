@@ -2,8 +2,10 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled, { css } from 'styled-components'
 import { FaGithub } from "react-icons/fa"
-import siteConfig from '../../../data/siteConfig'
+import { FiSun, FiMoon } from "react-icons/fi"
 import { withPrefix } from "gatsby"
+import Switch from 'react-switch'
+import siteConfig from '../../../data/siteConfig'
 
 const HeaderWrapper = styled.header`
   position: fixed;
@@ -13,7 +15,7 @@ const HeaderWrapper = styled.header`
   display: block;
   width: 100%;
   z-index: 1000;
-  background-color: #25303B;
+  background-color: ${({ theme }) => theme.colors.primary};
 `
 
 const HeaderNav = styled.nav`
@@ -27,7 +29,7 @@ const HeaderNav = styled.nav`
   justify-content: space-between;
   overflow-x: auto;
   overflow-y: hidden;
-  background-color: #25303B;
+  background-color: ${({ theme }) => theme.colors.primary};
   a:hover {
     filter: brightness(0.6);
   }
@@ -57,30 +59,28 @@ const HeaderLink = styled(Link)`
     border-bottom: 2px solid #fff;
   `}
 `
-const GithubLink = styled(({ className }) => (
-  <a 
-    className={className}
-    href={`https://github.com/${siteConfig.githubUsername}`}
-    target='_blank'
-    rel="noopener noreferrer"
-  >
-    <FaGithub size={32} />
-  </a>
-))`
-  position: relative;
-  display: flex;
-  align-items: center;
-  color: #fff;
-  border: 0;
-  margin: 0;
-  margin-right: 0.5rem;
-  padding-left: 20px;
-  padding-right: 20px;
-  min-width: 42px;
-  z-index: 10;
+
+const StyledSwitch = styled(Switch).attrs(props => ({
+  onHandleColor: props.theme.colors.primary,
+  offHandleColor: props.theme.colors.primary,
+}))`
+
 `
 
-const Header = ({ location }) => {
+const SwitchWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+`
+
+const IconWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+`
+
+const Header = ({ location, onChangeTheme, theme }) => {
   const { headerLinks } = siteConfig
 
   return (
@@ -97,7 +97,16 @@ const Header = ({ location }) => {
             </HeaderLink>
           ))}
         </HeaderLinkGroup>
-        <GithubLink />
+        {siteConfig.enableDarkmode && <SwitchWrapper >
+          <StyledSwitch 
+            onChange={onChangeTheme} 
+            checked={theme === 'light'}
+            onColor="#626262"
+            offColor="#212121"
+            checkedIcon={<IconWrapper><FiSun color="yellow" /></IconWrapper>}
+            uncheckedIcon={<IconWrapper><FiMoon color="white" /></IconWrapper>}
+          />
+        </SwitchWrapper>}
       </HeaderNav>
     </HeaderWrapper>
   )

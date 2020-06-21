@@ -19,6 +19,8 @@ import { animateOnScroll } from '../utils/isVisible'
 const Separator = styled.hr`
   margin-top: 24px;
   margin-bottom: 16px;
+  background-color: ${({ theme }) => theme.colors.fontColor};
+  opacity: .2;
 `
 
 const Home = ({ className, location }) => {

@@ -1,25 +1,25 @@
 import styled from 'styled-components'
+import { config } from 'react-awesome-styled-grid'
 
 const Wrapper = styled.main.attrs({
   role: 'main',
 })`
   position: relative;
   border-radius: 3px;
-  width: 80%;
+  width: 90%;
+  padding: 25px;
   max-width: 960px;
-  border-bottom: 1px solid #ebf2f6;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.colors.background};
   margin: 0px auto 30px auto;
   top: -100px;
-  padding: 50px;
   box-shadow: 0 0 0 0, 0 6px 12px rgba(0, 0, 0, 0.1);
   min-height: 150px;
-
-  @media (max-width: 780px) {
-    width: 90%;
-    padding: 25px;
-  }
+  
+  ${(props) => config(props).media.sm`
+    width: 80%;
+    padding: 50px;
+  `}
 `
 
 export default Wrapper
