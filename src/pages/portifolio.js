@@ -3,10 +3,12 @@ import styled, { css } from 'styled-components'
 import { Container, Row, Col } from 'react-awesome-styled-grid'
 import siteConfig from '../../data/siteConfig'
 import { withPrefix } from "gatsby"
-import Layout from '../components/layout'
+import loadable from '@loadable/component'
 import Hero from '../components/hero'
 import SEO from '../components/SEO'
 import Wrapper from '../components/wrapper'
+
+const Layout = loadable(() => import('../components/layout'))
 
 const Image = styled.img`
   max-height: 220px;

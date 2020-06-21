@@ -1,16 +1,22 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+
+export const isBrowser = () => typeof window !== "undefined"
+
 export const useDarkMode = () => {
-  const userTheme = localStorage.getItem('theme')
-  const [theme, setTheme] = useState(userTheme || 'light')
+  let websiteTheme
+  if (isBrowser()) {
+    websiteTheme = window.__theme
+  }
+  const [theme, setTheme] = useState(websiteTheme)
 
   const toggleTheme = () => {
-    if(theme === 'dark') {
-      localStorage.setItem('theme', 'light')
-      setTheme('light')
-    } else {
-      localStorage.setItem('theme', 'dark')
-      setTheme('dark')
-    }
+    window.__setPreferredTheme(websiteTheme === 'dark' ? 'light' : 'dark')
   }
+  useEffect(() => {
+    setTheme(window.__theme)
+    window.__onThemeChange = () => {
+      setTheme(window.__theme)
+    }
+  }, [])
   return [theme, toggleTheme]
 }
