@@ -13,6 +13,21 @@
 
 Create your resume in a few minutes with this totally responsive starter using React. Show off your skills, work experiences and activities in github.
 
+### Sections
+- About
+- Skills
+- Job experiences
+- Github repositories
+- Portifolio
+
+### Features
+- Responsive Design, optimized for Mobile devices
+- Google Analytics
+- SEO
+- PWA
+- Dark mode
+- Animations
+
 ## 📷 Preview
 
 ### Mobile
@@ -34,7 +49,7 @@ Create your resume in a few minutes with this totally responsive starter using R
     npx gatsby new my-default-starter https://github.com/santosfrancisco/gatsby-starter-cv
     ```
 
-1.  **Start developing.**
+2.  **Start developing.**
 
     Navigate into your new site’s directory and start it up.
 
@@ -43,7 +58,7 @@ Create your resume in a few minutes with this totally responsive starter using R
     npm run develop
     ```
 
-1.  **Open the source code and start editing!**
+3.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
 
@@ -51,12 +66,22 @@ Create your resume in a few minutes with this totally responsive starter using R
 
     Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-1. **Generate production build**
+4. **Generate production build**
 
-  That command will generate a production build on _public_ folder
-  ```sh
-    npm run build
-  ```
+    That command will generate a production build on _public_ folder
+    ```sh
+      npm run build
+    ```
+
+5. **Deploy to Github pages**
+
+    That command will deploy the production build to gh-pages branch of your repository
+    > ⚠️ don't forget to check `pathPrefix` in the configuration file.
+
+
+    ```sh
+      npm run deploy
+    ```
 
 ## Configuration
 
