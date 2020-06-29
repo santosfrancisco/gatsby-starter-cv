@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "author": "Francisco Santos <yoshi.df@gmail.com>",
   "dependencies": {
-    "@loadable/component": "5.12.0",
+    "@loadable/component": "5.13.0",
     "babel-plugin-styled-components": "1.10.6",
     "framer-motion": "1.11.0",
     "gatsby": "2.23.3",
