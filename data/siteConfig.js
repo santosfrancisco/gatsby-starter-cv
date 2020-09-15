@@ -123,7 +123,7 @@ Ho acquisito una buona capacità comunicativa, organizzativa e di problem solvin
       url: '/',
     },
     {
-      label: 'Portifolio',
+      label: 'Progetti ed interessi',
       url: '/portifolio',
     }
   ]
