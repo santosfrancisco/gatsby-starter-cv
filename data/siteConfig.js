@@ -1,6 +1,6 @@
 module.exports = {
   siteTitle: 'Gallinaro Marco',
-  siteDescription: `Create your online curriculum in just a few minutes with this starter`,
+  siteDescription: ``,
   keyWords: ['gatsbyjs', 'react', 'curriculum'],
   authorName: 'Gallinaro Marco',
   twitterUsername: '',
