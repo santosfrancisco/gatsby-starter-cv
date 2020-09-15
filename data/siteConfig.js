@@ -38,14 +38,14 @@ Ho acquisito una buona capacità comunicativa, organizzativa e di problem solvin
   jobs: [
     /* more jobs here */
     {
-      company: "Gympass",
+      company: "DECATHLON ITALIA S.r.l.",
       begin: {
-        month: 'sep',
+        month: 'Settembre',
         year: '2019'
       },
-      duration: null,
-      occupation: "Frontend developer",
-      description: "I am part of the Corporate team, responsible for the development and maintenance of the employee management platform, giving more and more autonomy to partner companies."
+      duration: '5 mesi',
+      occupation: "Sales Assistant",
+      description: "Accompagnare il cliente durante l'acquisto </br> Gestione e layout del merchandising del reparto"
   
     },  {
       company: "Lendico",
