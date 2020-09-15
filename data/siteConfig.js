@@ -93,12 +93,12 @@ Ho acquisito una buona capacità comunicativa, organizzativa e di problem solvin
  
   portifolio: [
     {
-      image: "",
+      image: "https://raw.githubusercontent.com/gallinaro/gatsby-starter-cv/master/static/images/btc-img.png",
       description: "Cryptovalute blog",
       url: "https://gallinaro-4f379.netlify.app/"
     },
     {
-      image: <i class="fas fa-film"></i>,
+      image: "https://raw.githubusercontent.com/gallinaro/gatsby-starter-cv/master/static/images/film-img.png",
       description: "Cinema blog",
       url: "https://marcofilm.netlify.app/"
     },
