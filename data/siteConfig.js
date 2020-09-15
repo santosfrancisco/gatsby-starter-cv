@@ -10,28 +10,28 @@ module.exports = {
 Ho acquisito una buona capacità comunicativa, organizzativa e di problem solving durante i periodi lavorativi e durante il periodo in cui ho assunto il ruolo di aiuto allenatore in 2 squadre di pallavolo.`,
   skills: [
     {
-      name: 'HTML',
+      name: 'Elaborazione informazioni',
+      level: 90
+    },
+    {
+      name: 'Problem solving',
+      level: 77
+    },
+    {
+      name: 'Microsoft Office™',
+      level: 85
+    },
+    {
+      name: 'Inglese',
       level: 70
     },
     {
-      name: 'CSS',
+      name: 'C#,HTML,CSS,PHP',
       level: 60
     },
     {
-      name: 'Javascript',
+      name: 'Database DBMS e MySql,gestione database con Access',
       level: 50
-    },
-    {
-      name: 'NodeJs',
-      level: 40
-    },
-    {
-      name: 'React',
-      level: 60
-    },
-    {
-      name: 'Git',
-      level: 70
     },
     /* more skills here */
   ],
@@ -57,7 +57,18 @@ Ho acquisito una buona capacità comunicativa, organizzativa e di problem solvin
       occupation: "Stagista amministrativo",
       description: "Focus sui costi dei materiali quale componente strategico del costo delle commesse, Analisi dei materiali per la determinazione dello slow-moving, Rivalutazione delle tariffe."
   
-    }, {
+    }, 
+    {
+      company: "Università degli studi di Verona",
+      begin: {
+        month: 'set',
+        year: '2014'
+      },
+      duration: null,
+      occupation: "studente",
+      description: "Economia e Commercio"
+    }, 
+    {
       company: "Estel Group S.r.l.",
       begin: {
         month: 'giu',
@@ -67,33 +78,19 @@ Ho acquisito una buona capacità comunicativa, organizzativa e di problem solvin
       occupation: "stagista CED",
       description: "Gestione Backup azinedale, configurazione Pc azeindali, backup server virtuali con VEEM"
     }, 
-  ],
-  
-  jobs: [
-   
-    {
-      company: "UNIVR",
-      begin: {
-        month: 'set',
-        year: '2014'
-      },
-      duration: null,
-      occupation: "Studente",
-      description: "Economia e Commercio"
-  
-    },
-    {
-      company: "ITIS G. Chilesotti",
+     {
+      company: "ITIS G.Chilesotti",
       begin: {
         month: 'set',
         year: '2009'
       },
-      duration: "5 anni",
-      occupation: "Studente",
+      duration: '5 anni',
+      occupation: "studente",
       description: "Perito informatico capotecnico"
+    }, 
+  ],
   
-    },
-    ];
+ 
   portifolio: [
     {
       image: "/images/gatsby-starter-cv.png",
