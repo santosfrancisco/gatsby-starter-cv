@@ -1,4 +1,3 @@
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 module.exports = {
   siteTitle: 'Gallinaro Marco',
   siteDescription: `Create your online curriculum in just a few minutes with this starter`,
