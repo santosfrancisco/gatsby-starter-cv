@@ -100,7 +100,7 @@ Ho acquisito una buona capacità comunicativa, organizzativa e di problem solvin
     {
       image: "",
       description: "Cinema",
-      url: "https://github.com/santosfrancisco/react-awesome-styled-grid"
+      url: "https://marcofilm.netlify.app/"
     },
     /* more portifolio items here */
   ],
