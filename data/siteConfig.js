@@ -89,10 +89,10 @@ Ho acquisito una buona capacità comunicativa, organizzativa e di problem solvin
   pathPrefix: '/gatsby-starter-cv', // Note: it must *not* have a trailing slash.
   siteCover: '',
   googleAnalyticsId: 'UA-000000000-1',
-  background_color: '#ffffff',
+  background_color: '#555555',
   theme_color: '#25303B',
   fontColor: "#000000cc",
-  enableDarkmode: true, // If true, enables dark mode switch
+  enableDarkmode: false, // If true, enables dark mode switch
   display: 'minimal-ui',
   icon: 'src/assets/logo sito cv.png',
   headerLinks: [
