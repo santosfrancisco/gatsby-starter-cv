@@ -82,8 +82,7 @@ Ho acquisito una buona capacità comunicativa, organizzativa e di problem solvin
     /* more portifolio items here */
   ],
   social: {
-    twitter: "https://twitter.com/_franciscodf",
-    email: "marco.gallinaro95@gmail.com"
+       email: "marco.gallinaro95@gmail.com"
   },
   siteUrl: 'https://santosfrancisco.github.io/gatsbystarter-cv',
   pathPrefix: '/gatsby-starter-cv', // Note: it must *not* have a trailing slash.
