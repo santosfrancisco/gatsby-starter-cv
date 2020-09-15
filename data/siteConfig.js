@@ -94,12 +94,12 @@ Ho acquisito una buona capacità comunicativa, organizzativa e di problem solvin
   portifolio: [
     {
       image: "",
-      description: "Cryptovalute",
+      description: "Cryptovalute blog",
       url: "https://gallinaro-4f379.netlify.app/"
     },
     {
-      image: "",
-      description: "Cinema",
+      image: <i class="fas fa-film"></i>,
+      description: "Cinema blog",
       url: "https://marcofilm.netlify.app/"
     },
     /* more portifolio items here */
