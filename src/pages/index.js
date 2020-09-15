@@ -12,7 +12,7 @@ import Wrapper from '../components/wrapper'
 import About from '../components/about'
 import Skills from '../components/skills'
 import Timeline from '../components/timeline'
-import Timeline from '--/componet/timeline-int'
+import Timeline from '../componet/timeline-int'
 import Repositories from '../components/repositories'
 
 const Layout = loadable(() => import('../components/layout'))
