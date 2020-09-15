@@ -32,7 +32,7 @@ const JobCard = styled.a`
 `
 
 const Portifolio = ({ className, location }) => {
-  const title = "Portifolio"
+  const title = "Progetti ed interessi"
   const { keywords, portifolio } = siteConfig
   return (
     <Layout location={location}>
