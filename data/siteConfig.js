@@ -93,13 +93,13 @@ Ho acquisito una buona capacità comunicativa, organizzativa e di problem solvin
  
   portifolio: [
     {
-      image: "/images/gatsby-starter-cv.png",
-      description: "Gatsby starter CV template",
-      url: "https://www.gatsbyjs.org/starters/santosfrancisco/gatsby-starter-cv/"
+      image: "",
+      description: "Cryptovalute",
+      url: "https://gallinaro-4f379.netlify.app/"
     },
     {
-      image: "/images/awesome-grid.png",
-      description: "Responsive grid for ReactJS",
+      image: "",
+      description: "Cinema",
       url: "https://github.com/santosfrancisco/react-awesome-styled-grid"
     },
     /* more portifolio items here */
