@@ -7,7 +7,8 @@ module.exports = {
   githubUsername: '',
   authorAvatar: '/images/foto.cv.jpg',
   authorDescription: `Ex giocatore di pallavolo appassionato da sempre di tecnologia.
-Ho acquisito una buona capacità comunicativa, organizzativa e di problem solving durante i periodi lavorativi e durante il periodo in cui ho assunto il ruolo di aiuto allenatore in 2 squadre di pallavolo.`,
+Ho acquisito una buona capacità comunicativa, organizzativa e di problem solving durante i periodi lavorativi e durante il periodo in cui ho assunto il ruolo di aiuto allenatore in 2 squadre di pallavolo.` 
+  <html><a href="" download> <img src="" alt="W3Schools" width="104" height="142"> </a></html>,
   skills: [
     {
       name: 'Elaborazione informazioni',
@@ -110,7 +111,7 @@ Ho acquisito una buona capacità comunicativa, organizzativa e di problem solvin
   siteUrl: 'https://santosfrancisco.github.io/gatsbystarter-cv',
   pathPrefix: '/gatsby-starter-cv', // Note: it must *not* have a trailing slash.
   siteCover: '',
-  googleAnalyticsId: 'UA-000000000-1',
+  googleAnalyticsId: '',
   background_color: '#555555',
   theme_color: '#25303B',
   fontColor: "#000000cc",
