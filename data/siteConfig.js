@@ -30,8 +30,8 @@ Ho acquisito una buona capacità comunicativa, organizzativa e di problem solvin
       level: 60
     },
     {
-      name: 'Database DBMS e MySql,gestione database con Access',
-      level: 50
+      name: 'Sap',
+      level: 45
     },
     /* more skills here */
   ],
