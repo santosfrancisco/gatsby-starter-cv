@@ -40,43 +40,33 @@ Ho acquisito una buona capacità comunicativa, organizzativa e di problem solvin
     {
       company: "DECATHLON ITALIA S.r.l.",
       begin: {
-        month: 'Settembre',
+        month: 'set',
         year: '2019'
       },
       duration: '5 mesi',
       occupation: "Sales Assistant",
-      description: "Accompagnare il cliente durante l'acquisto </br> Gestione e layout del merchandising del reparto"
+      description: "Accompagnare il cliente durante l'acquisto. Gestione e layout del merchandising del reparto"
   
     },  {
-      company: "Lendico",
+      company: "Tecno Pack S.p.a.",
       begin: {
-        month: 'apr',
-        year: '2018'
+        month: 'mag',
+        year: '2019'
       },
-      duration: null,
-      occupation: "Frontend developer",
-      description: "I integrate the Frontend team responsible for developing and maintaining the online lending platform."
+      duration: '2 mesi',
+      occupation: "Stagista amministrativo",
+      description: "Focus sui costi dei materiali quale componente strategico del costo delle commesse, Analisi dei materiali per la determinazione dello slow-moving, Rivalutazione delle tariffe."
   
     }, {
-      company: "Anapro",
+      company: "Estel Group S.r.l.",
       begin: {
-        month: 'dec',
-        year: '2016'
+        month: 'giu',
+        year: '2014'
       },
-      duration: '1 yr e 5 mos',
-      occupation: "Fullstack developer",
-      description: "Development and maintenance, corrective and preventive, of web applications for the real estate market."
-    }, {
-      company: "Anapro",
-      begin: {
-        month: 'set',
-        year: '2012'
-      },
-      duration: '4 yrs e 3 mos',
-      occupation: "Support Technician",
-      description: "Responsible for the implementation and parameterization of the system, training and customer support. Acting also in person in real estate launches guaranteeing the success and good use of the tool."
-  
-    },
+      duration: '1 mese',
+      occupation: "stagista CED",
+      description: "Gestione Backup azinedale, configurazione Pc azeindali, backup server virtuali con VEEM"
+    }, 
   ],
   portifolio: [
     {
