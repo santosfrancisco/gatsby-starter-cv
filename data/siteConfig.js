@@ -68,6 +68,32 @@ Ho acquisito una buona capacità comunicativa, organizzativa e di problem solvin
       description: "Gestione Backup azinedale, configurazione Pc azeindali, backup server virtuali con VEEM"
     }, 
   ],
+  
+  jobs: [
+   
+    {
+      company: "UNIVR",
+      begin: {
+        month: 'set',
+        year: '2014'
+      },
+      duration: null,
+      occupation: "Studente",
+      description: "Economia e Commercio"
+  
+    },
+    {
+      company: "ITIS G. Chilesotti",
+      begin: {
+        month: 'set',
+        year: '2009'
+      },
+      duration: "5 anni",
+      occupation: "Studente",
+      description: "Perito informatico capotecnico"
+  
+    },
+    ];
   portifolio: [
     {
       image: "/images/gatsby-starter-cv.png",
