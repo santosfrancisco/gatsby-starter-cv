@@ -83,9 +83,7 @@ Ho acquisito una buona capacità comunicativa, organizzativa e di problem solvin
   ],
   social: {
     twitter: "https://twitter.com/_franciscodf",
-    linkedin: "https://www.linkedin.com/in/santos-francisco",
-    github: "https://github.com/santosfrancisco",
-    email: "yoshi.df@gmail.com"
+    email: "marco.gallinaro95@gmail.com"
   },
   siteUrl: 'https://santosfrancisco.github.io/gatsbystarter-cv',
   pathPrefix: '/gatsby-starter-cv', // Note: it must *not* have a trailing slash.
@@ -96,7 +94,7 @@ Ho acquisito una buona capacità comunicativa, organizzativa e di problem solvin
   fontColor: "#000000cc",
   enableDarkmode: true, // If true, enables dark mode switch
   display: 'minimal-ui',
-  icon: 'src/assets/gatsby-icon.png',
+  icon: 'src/assets/logo sito cv.png',
   headerLinks: [
     {
       label: 'Home',
