@@ -106,7 +106,7 @@ Ho acquisito una buona capacità comunicativa, organizzativa e di problem solvin
   ],
   social: {
        email: "marco.gallinaro95@gmail.com"
-       phone: "3460516963"
+      
   },
   siteUrl: 'https://santosfrancisco.github.io/gatsbystarter-cv',
   pathPrefix: '/gatsby-starter-cv', // Note: it must *not* have a trailing slash.
