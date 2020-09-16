@@ -124,12 +124,8 @@ Ho acquisito una buona capacità comunicativa, organizzativa e di problem solvin
       url: '/',
     },
     {
-      label: 'Progetti ed interessi',
+      label: 'Progetti e Download',
       url: '/portifolio',
-    },
-     {
-      label: '⇩',
-      url: '',
     }
   ]
 }
