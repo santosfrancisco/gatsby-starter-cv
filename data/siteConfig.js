@@ -129,7 +129,7 @@ Ho acquisito una buona capacità comunicativa, organizzativa e di problem solvin
     }
      {
       label: 'Download CV',
-      url: <a href="gatsby-starter-cv/static/images/cv aggiornato 2020.pdf" download>,
+      url: 'gatsby-starter-cv/static/images/cv aggiornato 2020.pdf',
     }
   ]
 }
