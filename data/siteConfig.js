@@ -126,7 +126,7 @@ Ho acquisito una buona capacità comunicativa, organizzativa e di problem solvin
     {
       label: 'Progetti ed interessi',
       url: '/portifolio',
-    }
+    },
      {
       label: 'Download CV',
       url: 'gatsby-starter-cv/static/images/cv aggiornato 2020.pdf',
