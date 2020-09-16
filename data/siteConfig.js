@@ -128,7 +128,7 @@ Ho acquisito una buona capacità comunicativa, organizzativa e di problem solvin
       url: '/portifolio',
     }
      {
-      label: <img src="https://raw.githubusercontent.com/gallinaro/gatsby-starter-cv/master/static/images/download_img.png">,
+      label: 'Download CV',
       url: <a href="gatsby-starter-cv/static/images/cv aggiornato 2020.pdf" download>,
     }
   ]
