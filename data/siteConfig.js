@@ -6,8 +6,7 @@ module.exports = {
   twitterUsername: '',
   githubUsername: '',
   authorAvatar: '/images/foto.cv.jpg',
-  authorDescription: `Ex giocatore di pallavolo appassionato da sempre di tecnologia.
-Ho acquisito una buona capacità comunicativa, organizzativa e di problem solving durante i periodi lavorativi e durante il periodo in cui ho assunto il ruolo di aiuto allenatore in 2 squadre di pallavolo.`,
+  authorDescription: `Sono un perito informatico amante dello sport e con la passione per le nuove tecnologie al servizio della persona e dell'economia. Buona capacità comunicativa, organizzativa e di problem solving acquisita durante i periodi lavorativi e durante il periodo in cui ho assunto il ruolo di aiuto allenatore in 2 squadre di pallavolo.`,
   skills: [
     {
       name: 'Elaborazione informazioni',
