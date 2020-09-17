@@ -118,7 +118,7 @@ module.exports = {
   googleAnalyticsId: '',
   background_color: '#555555',
   theme_color: '#25303B',
-  fontColor: "#000000cc",
+  fontColor: "#FFFFFF",
   enableDarkmode: true, // If true, enables dark mode switch
   display: 'minimal-ui',
   icon: 'src/assets/logo sito cv.png',
