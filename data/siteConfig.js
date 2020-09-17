@@ -25,7 +25,7 @@ module.exports = {
       level: 70
     },
     {
-      name: 'C#,HTML,CSS,PHP',
+      name: 'C#, HTML, CSS, PHP',
       level: 60
     },
     {
