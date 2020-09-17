@@ -116,7 +116,7 @@ module.exports = {
   pathPrefix: '/gatsby-starter-cv', // Note: it must *not* have a trailing slash.
   siteCover: '',
   googleAnalyticsId: '',
-  background_color: '25303B',
+  background_color: '#555555',
   theme_color: '#25303B',
   fontColor: "#FFFFFF",
   enableDarkmode: false, // If true, enables dark mode switch
