@@ -119,7 +119,7 @@ module.exports = {
   background_color: '#555555',
   theme_color: '#25303B',
   fontColor: "#000000cc",
-  enableDarkmode: false, // If true, enables dark mode switch
+  enableDarkmode: true, // If true, enables dark mode switch
   display: 'minimal-ui',
   icon: 'src/assets/logo sito cv.png',
   headerLinks: [
