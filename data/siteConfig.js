@@ -30,7 +30,7 @@ module.exports = {
     },
     {
       name: 'Sap',
-      level: 45
+      level: 35
     },
     /* more skills here */
   ],
