@@ -1091,6 +1091,13 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
+"@babel/runtime@^7.12.5":
+  version "7.12.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.5.tgz#410e7e487441e1b360c29be715d870d9b985882e"
+  integrity sha512-plcc+hbExy3McchJCEQG3knOsuh3HH+Prx1P6cLIkET/0dLuQDEnrT+s27Axgc9bqfsmNUNHfscgMUdBpC9xfg==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/runtime@^7.7.7":
   version "7.10.3"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.10.3.tgz#670d002655a7c366540c67f6fd3342cd09500364"
@@ -1888,7 +1895,7 @@
     core-js "^3.4.1"
     regenerator-runtime "^0.13.3"
 
-"@loadable/component@^5.12.0":
+"@loadable/component@5.12.0":
   version "5.12.0"
   resolved "https://registry.yarnpkg.com/@loadable/component/-/component-5.12.0.tgz#34d056d15f53dc08d04e9203cad6867cf4f7306c"
   integrity sha512-eDG7FPZ8tCFA/mqu2IrYV6eS+UxGBo21PwtEV9QpkpYrx25xKRXzJUm36yfQPK3o7jXu43xpPkwiU4mLWcjJlw==
@@ -7262,13 +7269,13 @@ gatsby-page-utils@^0.2.9:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-google-analytics@2.3.4:
-  version "2.3.4"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-2.3.4.tgz#20e99318996b49436c89f6c2948ea6539a4c1a26"
-  integrity sha512-FjsHyZ1J+pxXqupG7SpCBIvxHVPWND2mYA4eK6c2i4B2d+6n60pPJd/YOqQdsxoIGLL210UOCnJpa6A7Vrd8pQ==
+gatsby-plugin-google-gtag@^2.5.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-2.6.0.tgz#7ab997e81b3ce705de27fb3f3e408e88e2ec8a25"
+  integrity sha512-bH7BW/u6JdmlerLg2LRi+rC84ZhGS/NWEo6mvdDUGoppNoKfhN+6ybO4RnkjP0PFfyeFdV53XkjmwnoN9bFXIQ==
   dependencies:
-    "@babel/runtime" "^7.10.2"
-    minimatch "3.0.4"
+    "@babel/runtime" "^7.12.5"
+    minimatch "^3.0.4"
 
 gatsby-plugin-manifest@2.4.11:
   version "2.4.11"
@@ -10400,7 +10407,7 @@ minimatch@3.0.3:
   dependencies:
     brace-expansion "^1.0.0"
 
-minimatch@3.0.4, minimatch@^3.0.3, minimatch@^3.0.4:
+minimatch@^3.0.3, minimatch@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
   integrity sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
@@ -12688,12 +12695,12 @@ react-style-singleton@^2.1.0:
     invariant "^2.2.4"
     tslib "^1.0.0"
 
-react-switch@5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/react-switch/-/react-switch-5.0.1.tgz#449277f4c3aed5286fffd0f50d5cbc2a23330406"
-  integrity sha512-Pa5kvqRfX85QUCK1Jv0rxyeElbC3aNpCP5hV0LoJpU/Y6kydf0t4kRriQ6ZYA4kxWwAYk/cH51T4/sPzV9mCgQ==
+react-switch@6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/react-switch/-/react-switch-6.0.0.tgz#bd4a2dea08f211b8a32e55e8314fd44bc1ec947e"
+  integrity sha512-QV3/6eRK5/5epdQzIqvDAHRoGLbCv/wDpHUi6yBMXY1Xco5XGuIZxvB49PHoV1v/SpEgOCJLD/Zo43iic+aEIw==
   dependencies:
-    prop-types "^15.6.2"
+    prop-types "^15.7.2"
 
 react@16.12.0, react@^16.12.0:
   version "16.12.0"
