@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import styled, { css } from 'styled-components'
-import { FaGithub } from "react-icons/fa"
 import { FiSun, FiMoon } from "react-icons/fi"
 import { withPrefix } from "gatsby"
 import Switch from 'react-switch'

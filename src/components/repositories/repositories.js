@@ -41,6 +41,7 @@ class Repositories extends React.Component {
                         className='repositories__repo-link' 
                         href={repo.html_url}
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <strong>{repo.name}</strong>
                       </a>
@@ -61,6 +62,7 @@ class Repositories extends React.Component {
                 <a 
                   href={`https://github.com/${siteConfig.githubUsername}`}
                   target="_blank"
+                  rel="noreferrer"
                 >
                   See all my repositories
                   <GoLinkExternal style={{ marginLeft: 8 }} />
