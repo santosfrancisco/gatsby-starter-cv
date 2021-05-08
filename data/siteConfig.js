@@ -30,12 +30,23 @@ module.exports = {
     },
     {
       name: 'Sap',
-      level: 40
+      level: 48
     },
     /* more skills here */
   ],
   jobs: [
     /* more jobs here */
+     {
+      company: "Tyrolit Vincent S.r.l.",
+      begin: {
+        month: 'gen',
+        year: '2021'
+      },
+      duration: '5 mesi',
+      occupation: "Ufficio logistica",
+      description: "Gestione Spedizioni (Italia, CEE, UK), fatturazione, analisi Spedizioni per valutazioni assicurative, archiviazione e solleciti MRN"
+  
+    },
     {
       company: "DECATHLON ITALIA S.r.l.",
       begin: {
@@ -53,7 +64,7 @@ module.exports = {
         year: '2019'
       },
       duration: '2 mesi',
-      occupation: "Stagista amministrativo",
+      occupation: "Ufficio amministrativo",
       description: "Focus sui costi dei materiali quale componente strategico del costo delle commesse, Analisi dei materiali per la determinazione dello slow-moving, Rivalutazione delle tariffe."
   
     }, 
@@ -74,7 +85,7 @@ module.exports = {
         year: '2014'
       },
       duration: '1 mese',
-      occupation: "stagista CED",
+      occupation: "Ufficio CED",
       description: "Gestione Backup azinedale, configurazione Pc azeindali, backup server virtuali con VEEM"
     }, 
      {
