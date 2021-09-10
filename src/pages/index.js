@@ -32,7 +32,7 @@ const Home = ({ className, location }) => {
   const title = siteConfig.siteTitle
   const { keywords } = siteConfig
   return (
-    <Layout location={location}>
+    <Layout location={location.pathname}>
       <SEO
         title={title}
         keywords={keywords}

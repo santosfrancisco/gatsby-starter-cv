@@ -53,7 +53,7 @@ const HeaderLink = styled(Link)`
   padding-right: 20px;
   min-width: 42px;
   z-index: 10;
-  ${({ active }) => active && css`
+  ${({ $active }) => $active && css`
     pointer-events: none;
     border-bottom: 2px solid #fff;
   `}
@@ -88,7 +88,7 @@ const Header = ({ location, onChangeTheme, theme }) => {
         <HeaderLinkGroup>
           {headerLinks.map((headerLink, i) => (
             <HeaderLink
-              active={location.pathname === withPrefix(headerLink.url)}
+              $active={location === withPrefix(headerLink.url)}
               to={headerLink.url}
               key={`header-link-${i}`}
             >
