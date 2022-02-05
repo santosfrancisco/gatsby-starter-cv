@@ -44,7 +44,7 @@ module.exports = {
       },
       duration: 'in corso...',
       occupation: "Junior Controller",
-      description: "Wip, costificazione delle commesse, Rivalutazione tariffe, Slow moving, analisi spedizioni per coperture assicurative"
+      description: "Wip, costificazione delle commesse, Rivalutazione tariffe, Slow moving, analisi spedizioni per coperture assicurative, CE riclassificato, FIFO, MM, analisi e gestione di magazzino tra cui inventari (di cui MODULA)"
   
     },
     
