@@ -30,12 +30,24 @@ module.exports = {
     },
     {
       name: 'Sap',
-      level: 48
+      level: 72
     },
     /* more skills here */
   ],
   jobs: [
     /* more jobs here */
+     {
+      company: "Tecno Pack S.p.a.",
+      begin: {
+        month: 'ago',
+        year: '2021'
+      },
+      duration: 'in corso...',
+      occupation: "Junior Controller",
+      description: "Wip, costificazione delle commesse, Rivalutazione tariffe, Slow moving, analisi spedizioni per coperture assicurative"
+  
+    },
+    
      {
       company: "Tyrolit Vincent S.r.l.",
       begin: {
