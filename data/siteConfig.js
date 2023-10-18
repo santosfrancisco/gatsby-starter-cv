@@ -6,7 +6,7 @@ module.exports = {
   twitterUsername: '',
   githubUsername: '',
   authorAvatar: '/images/foto.cv.jpg',
-  authorDescription: `Sono un perito informatico amante dello sport e con la passione per le nuove tecnologie al servizio della persona e dell'economia. Buona capacità comunicativa, organizzativa e di problem solving acquisita durante i periodi lavorativi e durante il periodo in cui ho assunto il ruolo di aiuto allenatore in 2 squadre di pallavolo.`,
+  authorDescription: `La mia passione per il lavoro emerge chiaramente nel mio ruolo di controller, il quale ha notevolmente arricchito le mie competenze economiche. La mia formazione iniziale è nel campo dell'informatica, e la mia passione per lo sport e la tecnologia sono stati due pilastri fondamentali nel mio percorso professionale. Ho affinato le mie capacità comunicative, organizzative e di problem-solving grazie alle esperienze lavorative e sportive, le quali mi hanno insegnato l'importanza della disciplina, della costanza e della precisione.`,
   skills: [
     {
       name: 'Elaborazione informazioni',
@@ -14,11 +14,11 @@ module.exports = {
     },
     {
       name: 'Problem solving',
-      level: 77
+      level: 80
     },
     {
       name: 'Microsoft Office™',
-      level: 85
+      level: 95
     },
     {
       name: 'Inglese',
@@ -30,7 +30,7 @@ module.exports = {
     },
     {
       name: 'Sap',
-      level: 72
+      level: 80
     },
     /* more skills here */
   ],
@@ -44,7 +44,7 @@ module.exports = {
       },
       duration: 'in corso...',
       occupation: "Junior Controller",
-      description: "Wip, costificazione delle commesse, Rivalutazione tariffe, Slow moving, analisi spedizioni per coperture assicurative, CE riclassificato, FIFO, MM, analisi e gestione di magazzino tra cui inventari (di cui MODULA)"
+      description: "Effettuo il controllo dei costi, della marginalità e dell'avanzamento delle commesse per le società del gruppo, anche predisponendo consuntivi mensili e YTD.Svolgo l'attività di predisposizione di reportistica per le società del gruppo, comprendente elementi come WIP, FIFO, CE, Slow Moving, calcolo dei costi indiretti e altro.Fornisco supporto al CFO nelle attività previste per la chiusura dei bilanci aziendali.Offro supportoal pricing delle commesse per le società del gruppo.Gestisco e monitoro le assicurazioni per le società del gruppo.Mi occupo della gestione e predisposizione degli inventari aziendali."
   
     },
     
@@ -86,7 +86,7 @@ module.exports = {
         month: 'set',
         year: '2014'
       },
-      duration: null,
+      duration: '3 anni',
       occupation: "studente",
       description: "Economia e Commercio"
     }, 
@@ -127,7 +127,7 @@ module.exports = {
     {
       image: "https://raw.githubusercontent.com/gallinaro/gatsby-starter-cv/master/static/images/download_img.png",
       description: "CV",
-      url: "https://github.com/gallinaro/gatsby-starter-cv/raw/master/static/images/CV.pdf"
+      url: "https://github.com/gallinaro/gatsby-starter-cv/raw/master/static/images/Marco_Gallinaro_-_Junior_Controller.pdf"
     },
     /* more portifolio items here */
   ],
